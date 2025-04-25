@@ -18,7 +18,7 @@ public class BeginPanel : BasePanel<BeginPanel>
         
         btnRank.onClick.Add(new EventDelegate(() =>
         {
-            
+            RankPanel.Instance.ShowMe();
         }));
         
         btnSetting.onClick.Add(new EventDelegate(() =>
