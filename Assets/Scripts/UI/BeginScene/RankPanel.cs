@@ -35,7 +35,7 @@ public class RankPanel : BasePanel<RankPanel>
                 GameObject obj = Instantiate(Resources.Load<GameObject>("UI/RankItem"), svList.transform, false);
 
                 obj.transform.localPosition = new Vector3(0, 113 - 53 * i, 0);
-                
+
                 RankItem item = obj.GetComponent<RankItem>();
                 item.InitInfo(i + 1, rankList[i].name, rankList[i].time);
                 rankItemList.Add(item);

@@ -9,11 +9,15 @@ public class GameDataMgr
 
     public MusicData musicData;
     public RankData rankData;
+    public RoleData roleData;
+
+    public int nowHeroIndex = 0;
 
     private GameDataMgr()
     {
         musicData = XmlDataMgr.Instance.LoadData(typeof(MusicData), "MusicData") as MusicData;
         rankData = XmlDataMgr.Instance.LoadData(typeof(RankData), "RankData") as RankData;
+        roleData = XmlDataMgr.Instance.LoadData(typeof(RoleData), "RoleData") as RoleData;
     }
 
     #region Music & Sound
@@ -62,8 +66,17 @@ public class GameDataMgr
         {
             rankData.rankList.RemoveAt(20);
         }
-        
+
         XmlDataMgr.Instance.SaveData(rankData, "RankData");
+    }
+
+    #endregion
+
+    #region RoleData
+
+    public RoleInfo GetNowSelHeroInfo()
+    {
+        return roleData.roleList[nowHeroIndex];
     }
 
     #endregion

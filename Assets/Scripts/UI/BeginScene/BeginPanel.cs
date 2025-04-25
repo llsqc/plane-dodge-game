@@ -13,22 +13,15 @@ public class BeginPanel : BasePanel<BeginPanel>
     {
         btnStart.onClick.Add(new EventDelegate(() =>
         {
+            ChoosePanel.Instance.ShowMe();
+
             HideMe();
         }));
-        
-        btnRank.onClick.Add(new EventDelegate(() =>
-        {
-            RankPanel.Instance.ShowMe();
-        }));
-        
-        btnSetting.onClick.Add(new EventDelegate(() =>
-        {
-            SettingPanel.Instance.ShowMe();
-        }));
-        
-        btnQuit.onClick.Add(new EventDelegate(() =>
-        {
-            Application.Quit();
-        }));
+
+        btnRank.onClick.Add(new EventDelegate(() => { RankPanel.Instance.ShowMe(); }));
+
+        btnSetting.onClick.Add(new EventDelegate(() => { SettingPanel.Instance.ShowMe(); }));
+
+        btnQuit.onClick.Add(new EventDelegate(() => { Application.Quit(); }));
     }
 }

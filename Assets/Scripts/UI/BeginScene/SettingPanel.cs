@@ -14,31 +14,16 @@ public class SettingPanel : BasePanel<SettingPanel>
 
     protected override void Init()
     {
-        btnClose.onClick.Add(new EventDelegate(() =>
-        {
-            HideMe();
-        }));
-        
-        sldMusic.onChange.Add(new EventDelegate(() =>
-        {
-            GameDataMgr.Instance.SetMusicVolume(sldMusic.value);
-        }));
-                
-        sldSound.onChange.Add(new EventDelegate(() =>
-        {
-            GameDataMgr.Instance.SetSoundVolume(sldSound.value);
-        }));
-                
-        togMusic.onChange.Add(new EventDelegate(() =>
-        {
-            GameDataMgr.Instance.SetMusicIsOpen(togMusic.value);
-        }));
-                        
-        togSound.onChange.Add(new EventDelegate(() =>
-        {
-            GameDataMgr.Instance.SetSoundIsOpen(togSound.value);
-        }));
-        
+        btnClose.onClick.Add(new EventDelegate(() => { HideMe(); }));
+
+        sldMusic.onChange.Add(new EventDelegate(() => { GameDataMgr.Instance.SetMusicVolume(sldMusic.value); }));
+
+        sldSound.onChange.Add(new EventDelegate(() => { GameDataMgr.Instance.SetSoundVolume(sldSound.value); }));
+
+        togMusic.onChange.Add(new EventDelegate(() => { GameDataMgr.Instance.SetMusicIsOpen(togMusic.value); }));
+
+        togSound.onChange.Add(new EventDelegate(() => { GameDataMgr.Instance.SetSoundIsOpen(togSound.value); }));
+
         HideMe();
     }
 
