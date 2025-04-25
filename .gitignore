@@ -75,3 +75,8 @@ crashlytics-build.properties
 
 # JetBrains Rider
 .idea/
+
+/Assets/ArtRes
+/Assets/ArtRes.meta
+/Assets/NGUI
+/Assets/NGUI.meta
