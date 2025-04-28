@@ -9,7 +9,7 @@ public class GamePanel : BasePanel<GamePanel>
 
     public List<GameObject> hpObjs;
 
-    private float nowTime = 0;
+    public float nowTime = 0;
 
     protected override void Init()
     {
