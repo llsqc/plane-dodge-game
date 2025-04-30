@@ -10,6 +10,8 @@ public class GameDataMgr
     public MusicData musicData;
     public RankData rankData;
     public RoleData roleData;
+    public BulletData bulletData;
+    public FireData fireData;
 
     public int nowHeroIndex = 0;
 
@@ -18,6 +20,8 @@ public class GameDataMgr
         musicData = XmlDataMgr.Instance.LoadData(typeof(MusicData), "MusicData") as MusicData;
         rankData = XmlDataMgr.Instance.LoadData(typeof(RankData), "RankData") as RankData;
         roleData = XmlDataMgr.Instance.LoadData(typeof(RoleData), "RoleData") as RoleData;
+        bulletData = XmlDataMgr.Instance.LoadData(typeof(BulletData), "BulletData") as BulletData;
+        fireData = XmlDataMgr.Instance.LoadData(typeof(FireData), "FireData") as FireData;
     }
 
     #region Music & Sound

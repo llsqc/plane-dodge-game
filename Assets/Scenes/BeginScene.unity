@@ -8935,7 +8935,7 @@ MonoBehaviour:
   mAlpha: 1
   mAlphaProp: 
   mClipping: 3
-  mClipRange: {x: -0.14892578, y: 0, z: 626, w: 276}
+  mClipRange: {x: 0.17211914, y: 0.000030517578, z: 626, w: 276}
   mClipSoftness: {x: 4, y: 4}
   mDepth: 4
   mSortingOrder: 0
