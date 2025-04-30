@@ -18,7 +18,7 @@ public class BulletObject : MonoBehaviour
 
     private void DelayDestroy()
     {
-        Destroy(gameObject);
+        Dead();
     }
 
     public void Dead()
@@ -37,10 +37,6 @@ public class BulletObject : MonoBehaviour
             player.Wound();
             Dead();
         }
-    }
-
-    void Start()
-    {
     }
 
     void Update()

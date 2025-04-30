@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7171649101010896799}
   - component: {fileID: 4229309346428373167}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,6 +65,26 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0c395858d0318dc41bb0e645e801eeac, type: 3}
       propertyPath: m_Name
       value: LightDome
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c395858d0318dc41bb0e645e801eeac, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0c395858d0318dc41bb0e645e801eeac, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0c395858d0318dc41bb0e645e801eeac, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0c395858d0318dc41bb0e645e801eeac, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 197838, guid: 0c395858d0318dc41bb0e645e801eeac, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c395858d0318dc41bb0e645e801eeac, type: 3}
       propertyPath: m_LocalScale.x

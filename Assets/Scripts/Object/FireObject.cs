@@ -59,7 +59,7 @@ public class FireObject : MonoBehaviour
 
     private void UpdatePos()
     {
-        screenPos.z = 200;
+        screenPos.z = 350;
         switch (posType)
         {
             case EPosType.TopLeft:

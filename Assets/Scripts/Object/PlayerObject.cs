@@ -19,8 +19,6 @@ public class PlayerObject : MonoBehaviour
     private Vector3 _nowPos;
     private Vector3 _lastPos;
 
-    public Camera actorCamera;
-
     private void Awake()
     {
         _instance = this;
@@ -88,6 +86,15 @@ public class PlayerObject : MonoBehaviour
         if (_nowPos.y <= 0 || _nowPos.y >= Screen.height)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, _lastPos.z);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out var hitInfo, 1000, 1 << LayerMask.NameToLayer("Bullet")))
+            {
+                var bulletObj = hitInfo.transform.GetComponent<BulletObject>();
+                bulletObj.Dead();
+            }
         }
     }
 }
