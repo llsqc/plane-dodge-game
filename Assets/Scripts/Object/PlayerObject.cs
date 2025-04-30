@@ -78,7 +78,7 @@ public class PlayerObject : MonoBehaviour
         transform.Translate(Vector3.forward * (_vValue * speed * Time.deltaTime));
         transform.Translate(Vector3.right * (_hValue * speed * Time.deltaTime), Space.World);
 
-        _nowPos = actorCamera.WorldToScreenPoint(transform.position);
+        _nowPos = Camera.main.WorldToScreenPoint(transform.position);
 
         if (_nowPos.x <= 0 || _nowPos.x >= Screen.width)
         {
